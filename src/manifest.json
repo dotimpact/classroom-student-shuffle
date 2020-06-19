@@ -1,0 +1,10 @@
+{
+  "name": "classroom生徒シャッフル",
+  "description": "Google classroomの課題ページで生徒の並び順をシャッフルします",
+  "version": "0.1",
+  "manifest_version": 2,
+  "content_scripts": [{
+    "matches": ["https://classroom.google.com/c/*/a/*/submissions/*"],
+    "js": ["jquery-2.2.0.min.js", "ChEx.js", "content_script.js"]
+  }]
+}
